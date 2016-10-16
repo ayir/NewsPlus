@@ -1,0 +1,19 @@
+{
+  "name": "News Reader",
+  "version": "1.1",
+  "description":
+    "Shows off latest news, which are \"toast\" windows that pop up on the desktop.",
+  "icons": {"16": "16.png", "48": "48.png", "128": "128.png"},
+  
+  "permissions": [
+    "notifications"
+  ],
+  "options_page": "options.html",
+  "background": { "scripts": ["jquery.min.js","background.js"] },
+  "manifest_version": 2,
+
+  // crbug.com/134315
+  "web_accessible_resources": [
+    "48.png"
+  ]
+}
