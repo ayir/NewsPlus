@@ -55,7 +55,7 @@ if (!localStorage.isInitialized) {
 // Test for notification support.
 if (window.Notification) {
   // While activated, show notifications at the display frequency.
-  if (JSON.parse(localStorage.isActivated)) { show(); }
+  if (JSON.parse(localStorage.isActivated)) { if(obj!=0)show(); }
 
   var interval = 0; // The display interval, in minutes.
 
